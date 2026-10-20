@@ -3,7 +3,7 @@ Type: Package
 Title: Free Access to BRVM Stock Market Data
 Version: 0.1.0
 Language: fr
-Authors@R: person("Zabaly", "Noumoutchè", role = c("aut", "cre"), email = "harzat@users.noreply.github.com", comment = "alias Harzat")
+Authors@R: person("Zabaly", "Noumoutchè", role = c("aut", "cre"), email = "harzat1999@hotmail.com", comment = "alias Harzat")
 Description: Light client to read prices, indices and dividends of the
     Bourse Regionale des Valeurs Mobilieres (BRVM, West African stock
     exchange) from the public mirror 'harzat/brvm-data-public' of BRVMetrics.
