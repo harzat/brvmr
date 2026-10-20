@@ -18,7 +18,7 @@
   txt <- tryCatch(
     readLines(url, encoding = "UTF-8", warn = FALSE),
     error = function(e) {
-      stop("Téléchargement impossible : ", url, "\n", conditionMessage(e),
+      stop("Telechargement impossible : ", url, "\n", conditionMessage(e),
            call. = FALSE)
     }
   )
