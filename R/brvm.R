@@ -59,6 +59,10 @@
 #' Liste des titres cotés
 #'
 #' @return Un data.frame : ticker, nom, secteur, nom_officiel, csv.
+#' @examples
+#' \donttest{
+#' head(brvm_actions())
+#' }
 #' @export
 brvm_actions <- function() {
   j <- jsonlite::fromJSON(paste(.brvm_lire_texte("actions.json"), collapse = "\n"))
@@ -73,6 +77,10 @@ brvm_actions <- function() {
 #' @param depuis Date de début optionnelle (objet Date ou "AAAA-MM-JJ").
 #' @return Un data.frame trié par date : date, cloture, plus_bas, plus_haut,
 #'   ouverture, volume_titres, volume_fcfa, variation_pct.
+#' @examples
+#' \donttest{
+#' tail(brvm_cours("SNTS", depuis = "2025-01-01"))
+#' }
 #' @export
 brvm_cours <- function(ticker, depuis = NULL) {
   acts <- brvm_actions()
@@ -89,6 +97,8 @@ brvm_cours <- function(ticker, depuis = NULL) {
 #' Liste des indices disponibles
 #'
 #' @return Un vecteur de codes, par exemple "BRVM30", "BRVMC".
+#' @examples
+#' brvm_indices()
 #' @export
 brvm_indices <- function() {
   c("BRVM30", "BRVMAG", "BRVMAS", "BRVMC", "BRVMDI", "BRVMFI", "BRVMIN",
@@ -101,6 +111,10 @@ brvm_indices <- function() {
 #' @param code Code de l'indice, voir [brvm_indices()].
 #' @inheritParams brvm_cours
 #' @return Un data.frame, même format que [brvm_cours()].
+#' @examples
+#' \donttest{
+#' tail(brvm_indice("BRVM30"))
+#' }
 #' @export
 brvm_indice <- function(code, depuis = NULL) {
   .brvm_msg_source()
@@ -115,6 +129,10 @@ brvm_indice <- function(code, depuis = NULL) {
 #'   méthodes de calcul). Par défaut, seulement les colonnes utiles.
 #' @return Un data.frame : ticker, societe, exercice, dividende, devise,
 #'   dates d'annonce, de détachement et de paiement, dividende net, rendement.
+#' @examples
+#' \donttest{
+#' head(brvm_dividendes())
+#' }
 #' @export
 brvm_dividendes <- function(tout = FALSE) {
   .brvm_msg_source()

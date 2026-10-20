@@ -12,3 +12,8 @@ Un data.frame : ticker, nom, secteur, nom_officiel, csv.
 \description{
 Liste des titres cotés
 }
+\examples{
+\donttest{
+head(brvm_actions())
+}
+}

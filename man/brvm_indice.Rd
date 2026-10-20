@@ -17,3 +17,8 @@ Un data.frame, même format que [brvm_cours()].
 \description{
 Historique d'un indice
 }
+\examples{
+\donttest{
+tail(brvm_indice("BRVM30"))
+}
+}

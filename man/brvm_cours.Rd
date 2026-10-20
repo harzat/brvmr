@@ -18,3 +18,8 @@ Un data.frame trié par date : date, cloture, plus_bas, plus_haut,
 \description{
 Historique des cours d'un titre
 }
+\examples{
+\donttest{
+tail(brvm_cours("SNTS", depuis = "2025-01-01"))
+}
+}

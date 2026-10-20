@@ -17,3 +17,8 @@ Un data.frame : ticker, societe, exercice, dividende, devise,
 \description{
 Dividendes
 }
+\examples{
+\donttest{
+head(brvm_dividendes())
+}
+}

@@ -12,3 +12,6 @@ Un vecteur de codes, par exemple "BRVM30", "BRVMC".
 \description{
 Liste des indices disponibles
 }
+\examples{
+brvm_indices()
+}

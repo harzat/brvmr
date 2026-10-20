@@ -1,5 +1,7 @@
 # brvmr
 
+[![R-CMD-check](https://github.com/harzat/brvmr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/harzat/brvmr/actions/workflows/R-CMD-check.yaml)
+
 Les données de la BRVM (cours, indices, dividendes) dans R, gratuitement.
 
 Le package ne contient aucune donnée. Il lit le miroir public

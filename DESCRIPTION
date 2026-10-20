@@ -1,18 +1,19 @@
 Package: brvmr
 Type: Package
-Title: Données de la BRVM en libre accès
+Title: Free Access to BRVM Stock Market Data
 Version: 0.1.0
+Language: fr
 Authors@R: person("Zabaly", "Noumoutchè", role = c("aut", "cre"), email = "harzat@users.noreply.github.com", comment = "alias Harzat")
-Description: Client léger pour lire les cours, indices et dividendes de la
-    Bourse Régionale des Valeurs Mobilières (BRVM) depuis le miroir public
-    'harzat/brvm-data-public' de BRVMetrics. Le package ne contient aucune
-    donnée : elle est téléchargée à l'appel. Les données restent la propriété
-    de leurs sources (BRVM, SikaFinance, RicheBourse), sans garantie
-    d'exactitude. Ce n'est pas un conseil en investissement.
+Description: Light client to read prices, indices and dividends of the
+    Bourse Regionale des Valeurs Mobilieres (BRVM, West African stock
+    exchange) from the public mirror 'harzat/brvm-data-public' of BRVMetrics.
+    The package ships no data: it is downloaded at call time. Data remain the
+    property of their sources (BRVM, SikaFinance, RicheBourse), with no
+    guarantee of accuracy. This is not investment advice.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Imports: jsonlite, utils
-Suggests: testthat (>= 3.0.0)
+Suggests: testthat (>= 3.0.0), curl
 Config/testthat/edition: 3
 URL: https://github.com/harzat/brvmr, https://brvmetrics.vercel.app
 BugReports: https://github.com/harzat/brvmr/issues
