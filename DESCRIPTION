@@ -1,0 +1,19 @@
+Package: brvmr
+Type: Package
+Title: Données de la BRVM en libre accès
+Version: 0.1.0
+Authors@R: person("Zabaly", "Noumoutchè", role = c("aut", "cre"), comment = "alias Harzat")
+Description: Client léger pour lire les cours, indices et dividendes de la
+    Bourse Régionale des Valeurs Mobilières (BRVM) depuis le miroir public
+    'harzat/brvm-data-public' de BRVMetrics. Le package ne contient aucune
+    donnée : elle est téléchargée à l'appel. Les données restent la propriété
+    de leurs sources (BRVM, SikaFinance, RicheBourse), sans garantie
+    d'exactitude. Ce n'est pas un conseil en investissement.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: jsonlite, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/harzat/brvmr, https://brvmetrics.vercel.app
+BugReports: https://github.com/harzat/brvmr/issues
+RoxygenNote: 7.3.2
