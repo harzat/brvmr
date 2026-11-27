@@ -15,6 +15,6 @@ Encoding: UTF-8
 Imports: jsonlite, utils
 Suggests: testthat (>= 3.0.0), curl
 Config/testthat/edition: 3
-URL: https://github.com/harzat/brvmr, https://brvmetrics.vercel.app
+URL: https://github.com/harzat/brvmr, https://brvmetrics.com
 BugReports: https://github.com/harzat/brvmr/issues
 Config/roxygen2/version: 8.1.0

@@ -6,7 +6,7 @@ Les données de la BRVM (cours, indices, dividendes) dans R, gratuitement.
 
 Le package ne contient aucune donnée. Il lit le miroir public
 [brvm-data-public](https://github.com/harzat/brvm-data-public) de
-[BRVMetrics](https://brvmetrics.vercel.app).
+[BRVMetrics](https://brvmetrics.com).
 
 ## Installer
 
@@ -41,4 +41,4 @@ d'information, sans autorisation écrite des sources. Si une source demande le
 retrait de ses données, elles seront retirées du miroir et ce package cessera
 d'y accéder.
 
-Retrait ou question : https://brvmetrics.vercel.app/conditions
+Retrait ou question : https://brvmetrics.com/conditions
